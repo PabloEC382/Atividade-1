@@ -1,16 +1,14 @@
 import 'dart:io';
 
-void main(){
-  double preco;
-  int quant;
+void main() {
+  double a = 0.1;
+  double b = 0.2;
+  double c = 0.3;
 
-  stdout.write("Digite o preço do produto: ");
-  preco = double.parse(stdin.readLineSync()!);
+  double soma = a + b;
 
-  stdout.write("Digite a quantidade comprada: ");
-  quant = int.parse(stdin.readLineSync()!);
-
-  double total = preco * quant;
-
-  print("Valor total: R\$ ${total.toStringAsFixed(2)}");
+  print('a + b = ${soma.toStringAsPrecision(17)}');
+  print('c     = ${c.toStringAsPrecision(17)}');
+  print('a + b == c ? ${soma == c}');
 }
+
