@@ -1,14 +1,11 @@
-import 'dart:io';
-
 void main() {
-  double a = 0.1;
-  double b = 0.2;
-  double c = 0.3;
+  String nomeCompleto = "Kleber Pereira";
+  int idade = 25;
+  String inicial = "K"; 
+  double altura = 1.78;
 
-  double soma = a + b;
-
-  print('a + b = ${soma.toStringAsPrecision(17)}');
-  print('c     = ${c.toStringAsPrecision(17)}');
-  print('a + b == c ? ${soma == c}');
+  print("Nome completo: $nomeCompleto");
+  print("Idade: $idade anos");
+  print("Inicial do nome: $inicial");
+  print("Altura: $altura m");
 }
-
